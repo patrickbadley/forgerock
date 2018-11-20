@@ -175,7 +175,11 @@
             <param-value>/policyEditor/,/policyEditor/index.html,/scripts/,/scripts/index.html,/XUI/,/XUI/index.html</param-value>
         </init-param>
     </filter>
-    <!-- To configure CORS Support, please see the documentation and use the following lines as a template.
+	<filter-mapping>
+	  <filter-name>CORSFilter</filter-name>
+	  <url-pattern>/oauth2/*</url-pattern>
+	</filter-mapping>
+    <!-- To configure CORS Support, please see the documentation and use the following lines as a template. -->
     <filter>
         <filter-name>CORSFilter</filter-name>
         <filter-class>org.forgerock.openam.cors.CORSFilter</filter-class>
@@ -185,7 +189,7 @@
                 A comma separated list of HTTP methods for which to accept CORS requests.
             </description>
             <param-name>methods</param-name>
-            <param-value>POST,PUT</param-value>
+            <param-value>GET,POST,PUT,PATCH,OPTIONS,DELETE</param-value>
         </init-param>
         <init-param>
             <description>
@@ -193,52 +197,17 @@
                 A comma separated list of origins from which to accept CORS requests.
             </description>
             <param-name>origins</param-name>
-            <param-value>http://www.example.net,https://example.org:8433</param-value>
+            <param-value>http://localhost:4200,https://bmw-ref-arch-flux.eastus.cloudapp.azure.com,http://bmw-ref-arch-flux.eastus.cloudapp.azure.com</param-value>
         </init-param>
-        <init-param>
-            <description>
-                Allow Credentials (Optional):
-                Whether to include the Vary (Origin) and Access-Control-Allow-Credentials headers in the response.
-                Default: false
-            </description>
-            <param-name>allowCredentials</param-name>
-            <param-value>false</param-value>
-        </init-param>
-        <init-param>
-            <description>
-                Allowed Headers (Optional):
-                A comma separated list of HTTP headers which can be included in the requests.
-            </description>
-            <param-name>headers</param-name>
-            <param-value>headerOne,headerTwo,headerThree</param-value>
-        </init-param>
-        <init-param>
-            <description>
-                Expected Hostname (Optional):
-                The name of the host expected in the request Host header.
-            </description>
-            <param-name>expectedHostname</param-name>
-            <param-value>openam.example.com:8080</param-value>
-        </init-param>
-        <init-param>
-            <description>
-                Exposed Headers (Optional):
-                The comma separated list of headers which the user-agent can expose to its CORS client.
-            </description>
-            <param-name>exposeHeaders</param-name>
-            <param-value>exposeHeaderOne,exposeHeaderTwo</param-value>
-        </init-param>
-        <init-param>
-            <description>
-                Maximum Cache Age (Optional):
-                The maximum time that the CORS client can cache the pre-flight response, in seconds.
-                Default: 600
-            </description>
-            <param-name>maxAge</param-name>
-            <param-value>600</param-value>
-        </init-param>
+		<init-param>
+		  <description>Allowed Headers (Optional):
+			A comma separated list of HTTP headers which can be included in the requests.
+		  </description>
+		  <param-name>headers</param-name>
+		  <param-value>Access-Control-Allow-Origin,Access-Control-Allow-Methods,Accept,Accept-Encoding,Accept-Language,Cache-Control,Authorization,Cookie,Connection,Content-Length,Content-Type,content-type,iPlanetDirectoryPro,Host,Origin,User-Agent,X-OpenAM-Username,X-OpenAM-Password,X-Requested-With,Pragma,Referer</param-value>
+		</init-param>
+
     </filter>
-    -->
     <filter>
         <filter-name>AuditContextFilter</filter-name>
         <filter-class>org.forgerock.openam.audit.context.AuditContextFilter</filter-class>
