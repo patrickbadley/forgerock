@@ -1,0 +1,2 @@
+webpackJsonp([226],{865:function(a,e,t){var r=t(39);a.exports=(r["default"]||r).template({compiler:[7,">= 4.0.0"],main:function(a,e,t,r,n){var o;return(null!=(o=a.invokePartial(r["headers/_TitleWithSubAndIcon"],e,{name:"headers/_TitleWithSubAndIcon",hash:{icon:"database",type:null!=e?e.name:e,title:null!=e?e.id:e},data:n,helpers:t,partials:r,decorators:a.decorators}))?o:"")+"\n<form data-json-form></form>"},usePartial:true,useData:true})}});
+//# sourceMappingURL=admin-views-realms-datastores-EditDataStoreTemplate.0561407d57.js.map

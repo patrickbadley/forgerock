@@ -1,0 +1,2 @@
+webpackJsonp([201],{733:function(a,e,n){var l=n(39);a.exports=(l["default"]||l).template({compiler:[7,">= 4.0.0"],main:function(a,e,n,l,t){return'<div class="panel panel-default">\n    <div data-panel-body class="panel-body" role="panel"></div>\n    <div data-panel-footer class="panel-footer clearfix"></div>\n</div>\n'},useData:true})}});
+//# sourceMappingURL=common-components-PanelComponentTemplate.bc3f0e915d.js.map

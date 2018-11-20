@@ -1,0 +1,8 @@
+version: '3'
+services:
+  web:
+    image: patrickbadley/forgerock-am:6.0.0.5.5
+    ports:
+      - "8080:8080"
+    extra_hosts:
+      - "forgerock-am-bmw.azurewebsites.net:127.0.0.1"

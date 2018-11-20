@@ -1,0 +1,2 @@
+webpackJsonp([335],{809:function(a,n,l){var e=l(39);a.exports=(e["default"]||e).template({compiler:[7,">= 4.0.0"],main:function(a,n,l,e,s){var i;return'<div class="cell-model-icon">\n    <span><i class="fa"></i></span>\n</div>\n<div class="cell-model-name">\n    '+a.escapeExpression((i=null!=(i=l.displayName||(null!=n?n.displayName:n))?i:l.helperMissing,"function"===typeof i?i.call(null!=n?n:a.nullContext||{},{name:"displayName",hash:{},data:s}):i))+"\n</div>\n"},useData:true})}});
+//# sourceMappingURL=admin-backgrid-cell-IconAndDisplayNameCell.99d51d6427.js.map

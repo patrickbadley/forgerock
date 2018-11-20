@@ -1,0 +1,16 @@
+JarIndex-Version: 1.0
+
+openam-ui-api-6.0.0.5.jar
+META-INF
+META-INF/maven
+META-INF/maven/org.forgerock.am
+META-INF/maven/org.forgerock.am/openam-ui-api
+css
+fonts
+images
+lang
+lib
+index.html
+swagger-ui.js
+theme-flattop.css
+

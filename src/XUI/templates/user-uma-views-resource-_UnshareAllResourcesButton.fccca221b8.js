@@ -1,0 +1,2 @@
+webpackJsonp([127],{870:function(e,t,n){var s=n(39);e.exports=(s["default"]||s).template({compiler:[7,">= 4.0.0"],main:function(e,t,n,s,a){return'<button id="unshareAllResources" type="button" class="btn btn-default" disabled>\n    <i class="fa fa-ban"></i> '+e.escapeExpression((n.t||t&&t.t||n.helperMissing).call(null!=t?t:e.nullContext||{},"uma.resources.myresources.unshareAllResources.button",{name:"t",hash:{},data:a}))+"\n</button>\n"},useData:true})}});
+//# sourceMappingURL=user-uma-views-resource-_UnshareAllResourcesButton.fccca221b8.js.map

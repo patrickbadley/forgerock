@@ -1,0 +1,2 @@
+webpackJsonp([321],{736:function(a,n,t){var i=t(39);a.exports=(i["default"]||i).template({compiler:[7,">= 4.0.0"],main:function(a,n,t,i,e){return'<nav id="backlink"></nav>\n<div class="container" data-global-configuration></div>\n'},useData:true})}});
+//# sourceMappingURL=admin-views-configuration-EditGlobalConfigurationBaseTemplate.0775d85851.js.map

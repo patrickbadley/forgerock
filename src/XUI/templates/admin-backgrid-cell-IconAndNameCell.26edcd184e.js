@@ -1,0 +1,2 @@
+webpackJsonp([334],{750:function(n,a,e){var l=e(39);n.exports=(l["default"]||l).template({compiler:[7,">= 4.0.0"],main:function(n,a,e,l,s){var i;return'<div class="cell-model-icon">\n    <span><i class="fa"></i></span>\n</div>\n<div class="cell-model-name">\n    '+n.escapeExpression(n.lambda(null!=(i=null!=a?a.attributes:a)?i.name:i,a))+"\n</div>\n"},useData:true})}});
+//# sourceMappingURL=admin-backgrid-cell-IconAndNameCell.26edcd184e.js.map

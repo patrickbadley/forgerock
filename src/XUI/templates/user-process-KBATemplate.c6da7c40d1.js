@@ -1,0 +1,2 @@
+webpackJsonp([366],{545:function(e,t,a){var n=a(39);e.exports=(n["default"]||n).template({compiler:[7,">= 4.0.0"],main:function(e,t,a,n,s){return'<p id="kbaDescription"></p>\n<ul id="kbaItems" class="list-unstyled"></ul>\n<p class="text-left">\n    <a href="#" role="button" data-add-question><i class="fa fa-plus"></i> '+e.escapeExpression((a.t||t&&t.t||a.helperMissing).call(null!=t?t:e.nullContext||{},"common.user.kba.provideAnother",{name:"t",hash:{},data:s}))+"</a>\n</p>\n"},useData:true})}});
+//# sourceMappingURL=user-process-KBATemplate.c6da7c40d1.js.map

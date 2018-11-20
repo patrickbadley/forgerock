@@ -1,0 +1,36 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: forgerock
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: forgerock
+    spec:
+      containers:
+      - name: forgerock
+        image: patrickbadley/forgerock-am:6.0.0.5.5
+        ports:
+        - containerPort: 8080
+      hostAliases:
+      - ip: "127.0.0.1"
+        hostnames:
+        - "forgerock-am-bmw.eastus.cloudapp.azure.com"
+        
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: forgerock
+  labels:
+    app: forgerock
+spec:
+  ports:
+  - port: 80
+    targetPort: 8080
+    name: http
+  selector:
+    app: forgerock
+  type: LoadBalancer
